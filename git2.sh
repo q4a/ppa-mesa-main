@@ -100,7 +100,7 @@ for dist in $(ls ../debian) ; do
 
 		if [ -n "$PPA" ] && [ -z "$NOUPLOAD" ]; then
 			echo -e ${CYAN}Uploading to $PPA: $changes${NC}
-			dput ssh-ppa:ernstp/"$PPA" ../${PACKAGE_NAME}_${DEBIAN_VERSION_NOE}_source.changes
+			dput ppa:q4a/"$PPA" ../${PACKAGE_NAME}_${DEBIAN_VERSION_NOE}_source.changes
 		fi
 	fi
 done
